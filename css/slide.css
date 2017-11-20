@@ -1,0 +1,122 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+#slideshow {
+  margin: 20px auto;
+  position: absolute;
+  font-size: 36px;
+  width: 80%;
+  height: fit-content;
+  padding: 10px;
+  font-weight: bold;
+
+ /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);*/
+}
+
+#slideshow > div {
+  position: absolute;
+
+  background-color: #ffffffa3;
+  box-shadow: 2px 2px .5px #00000061;
+border-radius: 8px;
+width: 90%;
+height: fit-content;
+padding-bottom: 6px;
+margin-left: 10px;
+margin-top: 10px;
+}
+
+
+@media screen and (min-width: 600px) {
+ #slideshow > div {
+ 	margin-top: 60px;
+	margin-left: 1px;
+}
+}
+
+
+
+@media screen and (min-width: 600px) {
+ #slideshow {
+	font-size: 46px;
+}
+}
+
+
+.parallax { 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+
+/*.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  margin-top: 200px;
+  width: 60%;
+  padding: 10px;
+  font-size: 32px;
+  background-color: #ffffffa3;
+  box-shadow: 2px 2px .5px #00000061;
+border-radius: 8px;
+font-family: 'Montserrat', sans-serif;
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 20%; opacity: 1; }
+  33.33%, 100% { left: 100%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 20%; opacity: 1; }
+  66.66%, 100% { left: 100%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 20%; opacity: 1; }
+  100% { left: 100%; opacity: 0; }
+}
+
+
+@media screen and (min-width: 600px) {
+	.item-1, 
+.item-2, 
+.item-3 {
+	font-size: 46px;
+	margin-top: 200px;
+}
+}*/
+
+
+
+
+
