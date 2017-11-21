@@ -364,7 +364,7 @@ section#home {
 
 }
 
-@media screen and (width: 320px) {
+@media only screen and (max-width: 320px) {
 
 section#home {
   padding-top: 10px;
@@ -379,8 +379,50 @@ section#home {
 
 }
 
+@media only screen and (max-width: 320px) {
 
+section#home {
+  padding-top: 10px;
+  background-image: url(images/smallesthome.png);
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: fit-content;
+}
 
+}
+
+@media only screen and (max-width: 375px) {
+
+section#home {
+  padding-top: 10px;
+  background-image: url(images/smallhomeip6.png);
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: fit-content;
+}
+
+}
+
+@media only screen and (max-width: 414px) {
+
+section#home {
+  padding-top: 10px;
+  background-image: url(images/smallhomeip6.png);
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: fit-content;
+}
+
+}
 
 
 
