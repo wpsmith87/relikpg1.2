@@ -115,33 +115,6 @@ section {
   width: 100%;
 }
 
-section#home {
-  padding-top: 10px;
-  background-image: url(images/aboutimage1.1.png);
-  min-height: 500px;
-  background-size: cover;
-  background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: fit-content;
-}
-
-
-.box h1 {
-  margin-bottom: 10px;
-  font-size: 60px;
-  font-family: 'Nunito', sans-serif;
-}
-
-@media screen and (min-width: 880px) {
-
-  .box h1 {
-  margin-bottom: 10px;
-  font-size: 80px;
-  font-family: 'Nunito', sans-serif;
-}
-
-}
 
 p {
   width: 90%;
@@ -359,7 +332,59 @@ header {
 }
 
 
-/* Service */
+
+/* Home */
+
+
+section#home {
+  padding-top: 10px;
+  background-image: url(images/aboutimage1.1.png);
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: fit-content;
+}
+
+
+.box h1 {
+  margin-bottom: 10px;
+  font-size: 60px;
+  font-family: 'Nunito', sans-serif;
+}
+
+@media screen and (min-width: 880px) {
+
+  .box h1 {
+  margin-bottom: 10px;
+  font-size: 80px;
+  font-family: 'Nunito', sans-serif;
+}
+
+}
+
+@media screen and (width: 320px) {
+
+section#home {
+  padding-top: 10px;
+  background-image: url(images/320x500home.png);
+  min-height: 500px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: fit-content;
+}
+
+}
+
+
+
+
+
+
+/* Services */
 
 section#services{
   padding-bottom: 40px;
@@ -486,95 +511,10 @@ background-image: url(images/dronephoto1.1.jpg);
 
 section#projects-img {
   padding-top: 100px;
-background-image: url(images/DJI_0002.JPG);
+background-image: url(images/dronegolf1.jpg);
   min-height: 320px;
   background-size: cover;
   background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
 }
-
-.proimg-1 {
-background-image: url(images/dronegolf1.jpg); 
-background-size: cover;
- background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-  box-shadow: 2px 2px .5px #00000061;
-  } 
-
-  .box.proimg-1 {
-    height: 300px;
-    margin-top: 20px;
-  }
-
-  @media screen and (min-width: 880px) {
-.box.proimg-1 {
-    height: 200px;
-    margin-top: 20px;
-  }
-
-  }
-
-  .proimg-2 {
-background-image: url(images/pblkline1.1.png);
-background-size: cover;
- background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-  box-shadow: 2px 2px .5px #00000061; 
-    } 
-
-    .box.proimg-2 {
-    height: 300px;
-    margin-top: 20px;
-  }
-
- @media screen and (min-width: 880px) {
-.box.proimg-2 {
-    height: 200px;
-    margin-top: 20px;
-  }
-
-    .proimg-3 {
-background-image: url(images/familyfield2.jpg);
-background-size: cover;
- background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-  box-shadow: 2px 2px .5px #00000061; 
-
-      } 
-
-      .box.proimg-3 {
-    height: 300px;
-    margin-top: 20px;
-  }
-
-   @media screen and (min-width: 880px) {
-.box.proimg-3 {
-    height: 200px;
-    margin-top: 20px;
-  }
-
-      .proimg-4 {
-
-  background-image: url(images/umedialogo1.4.1.png); 
-  background-size: cover;
-   background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 5px;
-  box-shadow: 2px 2px .5px #00000061;
-} 
-
-.box.proimg-4 {
-    height: 300px;
-    margin-top: 20px;
-  }
-
-   @media screen and (min-width: 880px) {
-.box.proimg-4 {
-    height: 200px;
-    margin-top: 20px;
-  }
-
