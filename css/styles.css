@@ -430,6 +430,10 @@ section#services{
 
 }
 
+#services img:hover {
+filter: none;
+}
+
 #services li {
   text-decoration: none;
   list-style: none;
@@ -449,6 +453,8 @@ color: #28B463;
 section#about {
   padding-bottom: 20px;
 }
+
+
 
 section#about-img {
   padding-top: 80px;
@@ -499,7 +505,7 @@ section#about-img {
 }
 
 #about a:hover {
-  color: #DC7633;
+  color: #28B463;
 }
 
 /* Web */
@@ -526,6 +532,11 @@ section#web-img {
     }
 }
 
+#web h5 {
+  font-size: 14px;
+  font-weight: 900;
+}
+
 #web img {
   height:120px;
   width: auto;
@@ -539,6 +550,10 @@ section#web-img {
 height: 210px;
 }
 
+}
+
+#web img:hover {
+  box-shadow: none;
 }
 
 /* Drone */
@@ -574,6 +589,10 @@ section#drone-img {
   filter: drop-shadow(0 0 2px #000);
 }
 
+#drone img:hover {
+  filter: none;
+}
+
 
 @media screen and (min-width: 640px){
 
@@ -586,6 +605,9 @@ section#drone-img {
 
 /* Projects */
 
+#projects {
+  padding-bottom: 40px;
+}
 
 section#projects-img {
   padding-top: 100px;
@@ -610,6 +632,13 @@ section#projects-img {
   padding-left: 15px;
 }
 
+.projbutts:hover {
+color: #28B463;
+}
+
+.projbutt:hover {
+  color: #28B463;
+}
 
 /* Contact */
 
@@ -631,6 +660,20 @@ section#contact-img {
     }
 }
 
+#contact {
+  padding-bottom: 40px;
+}
+
+#contact a {
+  text-decoration: none;
+  color: #17202A;
+}
+
+#contact a:hover {
+  color: #28B463;
+  text-decoration: underline;
+}
+
 #contact li {
 text-decoration: none;
 list-style: none;
@@ -646,6 +689,10 @@ border-radius: 8px;
 padding: 5px;
 }
 
+.cont:hover {
+  box-shadow: 2px 2px .5px #00000061;
+}
+
 .conti {
 height: 60px;
 width: 58%;
@@ -655,11 +702,24 @@ border-radius: 8px;
 padding: 5px;
 }
 
+.conti:hover {
+box-shadow: 2px 2px .5px #00000061;
+}
+
 .cont-button {
  width: 60%;
  height: auto;
  font-size: 22px;
  color: #fff;
  background-color: #17202A;
+ border: none;
 }
+
+.cont-button:hover {
+  background-color: #28B463;
+   box-shadow: 2px 2px .5px #00000061;
+   border: 1px solid #17202A;
+}
+
+
 
