@@ -361,8 +361,20 @@ background-position: center;
     background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 880px) {
+
 .home-image2 {
-background-image: url(images/webdevside3.jpg);
+background-image: url(images/webdev1.2.png);
+min-height: 400px;
+background-size: cover;
+background-attachment: fixed;
+background-position: center;
+    background-repeat: no-repeat;
+}
+}
+
+.home-image2 {
+background-image: url(images/webdevside2.2.png);
 min-height: 400px;
 background-size: cover;
 background-attachment: fixed;
