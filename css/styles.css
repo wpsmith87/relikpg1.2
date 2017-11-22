@@ -486,7 +486,7 @@ section#drone-img {
 @media only screen and (max-device-width: 1024px) {
     section#drone-img {
         background-attachment: scroll;
-        background-size: 100%;
+        height: auto;
     }
 }
 
