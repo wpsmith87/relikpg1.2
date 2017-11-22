@@ -483,11 +483,12 @@ section#drone-img {
     background-repeat: no-repeat;
 }
 
-/*
-section#drone-img {
-  min-height: 300px;
+@media only screen and (max-device-width: 1024px) {
+    section#drone-img {
+        background-attachment: scroll;
+    }
 }
-*/
+
 
 #drone-img img {
   height: auto;
