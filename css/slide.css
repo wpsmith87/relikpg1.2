@@ -16,10 +16,9 @@
 
 #slideshow > div {
   position: absolute;
-
-  background-color: #ffffffa3;
-  box-shadow: 2px 2px .5px #00000061;
-border-radius: 8px;
+font-family: 'Montserrat', sans-serif;
+font-weight: 900;
+text-shadow: 1.2px 1.2px #6BBD8E;
 width: 90%;
 height: fit-content;
 padding-bottom: 6px;
@@ -39,7 +38,7 @@ margin-top: 10px;
 
 @media screen and (min-width: 600px) {
  #slideshow {
-	font-size: 46px;
+	font-size: 40px;
 }
 }
 
