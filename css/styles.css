@@ -77,7 +77,7 @@ a:hover {
   user-select: none;
 }
 
-@media screen and (min-width: 65em) {
+@media screen and (min-width: 70em) {
   .js .nav-collapse {
     position: relative;
   }
@@ -108,8 +108,29 @@ body {
 
 }
 
+  img {
+  height:150px;
+  width: auto;
+
+}
+
+@media screen and (min-width: 880px) {
+
+  img {
+  height:180px;
+  width: auto;
+
+}
+
+  }
+
 h2 {
  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: lighter;
 }
 
 section {
@@ -212,7 +233,7 @@ header {
   opacity: 1;
 }
 
-@media screen and (min-width: 65em) {
+@media screen and (min-width: 70em) {
   .mask {
     display: none !important;
     opacity: 0 !important;
@@ -245,7 +266,7 @@ header {
   float: left;
 }
 
-@media screen and (min-width: 65em) {
+@media screen and (min-width: 70em) {
   .nav-collapse {
     float: right;
     width: auto;
@@ -257,7 +278,7 @@ header {
   width: 100%;
 }
 
-@media screen and (min-width: 65em) {
+@media screen and (min-width: 70em) {
   .nav-collapse li {
     width: auto;
   }
@@ -280,7 +301,7 @@ header {
   background: rgba(0, 0, 0, 0.12);
 }
 
-@media screen and (min-width: 65em) {
+@media screen and (min-width: 70em) {
   .nav-collapse a {
     /*border-left: 1px solid white;*/
     padding: 1.8em 2em;
@@ -296,7 +317,7 @@ header {
   padding-left: 2em;
 }
 
-@media screen and (min-width: 65em) {
+@media screen and (min-width: 70em) {
   .nav-collapse ul ul a {
     display: none;
   }
@@ -356,12 +377,12 @@ header {
 /* Home */
 
 section#home {
-  padding-top: 80px;
+  padding-top: 100px;
   padding-bottom: 80px;
-  background-image: url(images/homescape1.jpg);
+  background-image: url(images/dronephoto1.6.jpg);
   min-height: fit-content;
   width: 100%;
-  height: 400px;
+  height: 300px;
   background-size: cover;
   background-attachment: fixed;
     background-position: center;
@@ -372,25 +393,58 @@ section#home {
     section#home {
         background-attachment: scroll;
         height: auto;
+            padding-top: 100px;
     }
 }
 
 
 
 #home img {
-   height:220px;
+   height:150px;
   width: auto;
   filter: drop-shadow(2px 2px .5px #00000061);
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+@media screen and (min-width: 880px) {
+#home img {
+
+   height:200px;
+ }
+}
+
+#home h4 {
+  margin-bottom: 20px;
+text-shadow: 2px 2px #17202A;
+color: #fff;
+font-size: 22px
 }
 
 
-/*@import url('https://fonts.googleapis.com/css?family=Teko:700');*/
+li {
+  text-decoration: none;
+  list-style: none;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+
+ul {
+  margin-top: 40px;
+  display: inline-block;
+  padding-right: 8px;
+  padding-left: 8px;
+}
+
+
+
 
 .row h1 {
+  margin-top: 50px;
   margin-bottom: 20px;
   font-size: 28px;
   text-shadow: 2px 2px #17202A;
-  /*font-family: 'Teko', sans-serif;*/
   color: #fff;
 }
 
@@ -399,7 +453,7 @@ section#home {
   .row h1 {
   margin-bottom: 20px;
   font-size: 44px;
-  /*font-family: 'Teko', sans-serif;*/
+
 }
 
 }
@@ -419,8 +473,9 @@ section#services{
 #services img {
   height:150px;
   width: auto;
-  filter: drop-shadow(2px 2px .5px #00000061);
+
 }
+
 
 @media screen and (min-width: 880px) {
 #services img {
@@ -431,7 +486,7 @@ section#services{
 }
 
 #services img:hover {
-filter: none;
+  filter: drop-shadow(2px 2px .5px #00000061);
 }
 
 #services li {
@@ -459,7 +514,7 @@ section#about {
 section#about-img {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: url(images/about-image1.jpg);
+  background-image: url(images/about-image1.png);
   min-height: 400px;
   width: 100%;
   height: 400px;
@@ -494,13 +549,14 @@ section#about-img {
 
 #about ul {
   margin-top: 40px;
+  margin-bottom: 40px;
   display: inline-block;
   padding-right: 8px;
   padding-left: 8px;
 }
 
 #about a {
-  text-decoration: none;
+  text-decoration: underline;
   color: #17202A;
 }
 
@@ -533,15 +589,15 @@ section#web-img {
 }
 
 #web h5 {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 900;
 }
+
 
 #web img {
   height:120px;
   width: auto;
   border-radius: 5px;
-  box-shadow: 2px 2px .5px #00000061;
 }
 
 @media screen and (min-width: 640px) {
@@ -553,7 +609,7 @@ height: 210px;
 }
 
 #web img:hover {
-  box-shadow: none;
+  filter: drop-shadow(2px 2px .5px #00000061);
 }
 
 /* Drone */
@@ -586,11 +642,10 @@ section#drone-img {
 #drone img {
   height: 150px;
   width: auto;
-  filter: drop-shadow(0 0 2px #000);
 }
 
 #drone img:hover {
-  filter: none;
+filter: drop-shadow(0 0 2px #000);
 }
 
 
@@ -599,7 +654,6 @@ section#drone-img {
 #drone img {
   height: 220px;
   width: auto;
-  filter: drop-shadow(0 0 .5px #000);
 }
 }
 
@@ -611,7 +665,7 @@ section#drone-img {
 
 section#projects-img {
   padding-top: 100px;
-  background-image: url(images/DJI_0013.JPG);
+  background-image: url(images/DJI_0010.JPG);
   min-height: 400px;
   width: 100%;
   background-size: cover;
@@ -681,12 +735,18 @@ list-style: none;
 
 .cont {
 height: 30px;
-width: 58%;
+width: 98%;
 margin-bottom: 10px;
 font-size: 18px;
 border: 1px solid #17202A;
 border-radius: 8px;
 padding: 5px;
+}
+
+@media screen and (min-width: 880px) {
+  .cont {
+width: 100%;
+}
 }
 
 .cont:hover {
@@ -695,11 +755,17 @@ padding: 5px;
 
 .conti {
 height: 60px;
-width: 58%;
+width: 98%;
 font-size: 18px;
 border-color: #17202A;
 border-radius: 8px;
 padding: 5px;
+}
+
+@media screen and (min-width: 880px) {
+  .conti {
+width: 100%;
+}
 }
 
 .conti:hover {
@@ -707,12 +773,18 @@ box-shadow: 2px 2px .5px #00000061;
 }
 
 .cont-button {
- width: 60%;
+ width: 100%;
  height: auto;
  font-size: 22px;
  color: #fff;
  background-color: #17202A;
  border: none;
+}
+
+@media screen and (min-width: 880px) {
+  .cont-button {
+width: 100%;
+}
 }
 
 .cont-button:hover {
@@ -721,5 +793,209 @@ box-shadow: 2px 2px .5px #00000061;
    border: 1px solid #17202A;
 }
 
+/* Web-Home */
+
+
+#home.web-home {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(images/servroom1.jpg);
+  min-height: fit-content;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    #home.web-home {
+        background-attachment: scroll;
+        height: auto;
+            padding-top: 200px;
+    }
+}
+
+.home-web {
+  background-color: white;
+
+}
+
+.home-web img {
+  height:150px;
+  width: auto;
+
+}
+
+
+@media screen and (min-width: 880px) {
+.home-web img {
+  height:130px;
+  width: auto;
+
+}
+
+.home-web ul {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 20px;
+  }
+
+}
+
+.home-web img:hover {
+  filter: drop-shadow(2px 2px .5px #00000061);
+}
+
+.home-web li {
+  text-decoration: none;
+  list-style: none;
+  padding-top: 8px;
+}
+
+.home-web ul {
+    display: inline-block;
+    padding: 20px;
+  }
+
+  #frontend .col-3 {
+    margin-top: 50px;
+  }
+
+  section#frontend-img {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(images/frontendimg1.jpg);
+  min-height: 400px;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    section#frontend-img {
+        background-attachment: scroll;
+        height: auto;
+    }
+}
+
+b {
+  font-size: 18px;
+}
+
+h6 {
+font-size: 12px;
+font-weight: bolder;
+}
+
+#frontend h5 {
+  font-weight: bolder;
+}
+
+#fullstak .col-4 {
+    margin-top: 50px;
+  }
+
+  section#fullstak-img {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(images/fullstackimg1.png);
+  min-height: 400px;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    section#fullstak-img {
+        background-attachment: scroll;
+        height: auto;
+    }
+}
+
+
+#fullstak h5 {
+  font-weight: bolder;
+}
+
+#webdemos img {
+  height:150px;
+  width: auto;
+
+}
+
+#webdemos img:hover {
+  box-shadow: 2px 2px .5px #00000061;
+}
+
+
+@media screen and (min-width: 880px) {
+#webdemos img {
+  height:170px;
+  width: auto;
+
+}
+}
+
+#webdemos h5 {
+  margin-top: 20px;
+}
+
+#home.drone-home {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-image: url(images/dronephoto1.5.jpg);
+  min-height: fit-content;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width: 1024px) {
+#home.drone-home {
+        background-attachment: scroll;
+        height: auto;
+            padding-top: 200px;
+    }
+}
+
+.home-drone {
+  background-color: white;
+
+}
+
+.home-drone a:hover {
+ filter: drop-shadow(2px 2px .5px #00000061);
+}
+
+
+.home-drone ul {
+    display: inline-block;
+    padding: 20px;
+    margin-left: 20px;
+  }
+
+
+
+.home-drone li {
+  text-decoration: none;
+  list-style: none;
+  padding-top: 8px;
+}
+
+.home-drone ul {
+    display: inline-block;
+    padding: 20px;
+  }
 
 

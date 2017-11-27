@@ -10,6 +10,26 @@ main .row {
   padding-top: 20px;
 }
 
+.upper .box {
+  background-color: transparent;
+}
+
+.upper .col-6 {
+  background-color: transparent;
+}
+
+.upper .row {
+  background-color: transparent;
+}
+
+.web-upper {
+  padding-top: 20px;
+}
+
+div {
+  background: transparent;
+}
+
 
 .box {
   min-height: 200px;
