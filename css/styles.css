@@ -101,7 +101,7 @@ body {
   -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   color: #17202A;
-  background: #fff;
+  background: #bdba6b17;
   /*font: normal 100%/1.4 sans-serif;*/
   font-family: 'Montserrat', sans-serif;
   text-align: center;
@@ -109,7 +109,7 @@ body {
 }
 
   img {
-  height:150px;
+  height:160px;
   width: auto;
 
 }
@@ -117,7 +117,7 @@ body {
 @media screen and (min-width: 880px) {
 
   img {
-  height:180px;
+  height:220px;
   width: auto;
 
 }
@@ -139,6 +139,7 @@ section {
   padding: 40px 0 0;
   height: fit-content;
   width: 100%;
+  padding-bottom: 40px;
 }
 
 
@@ -153,12 +154,13 @@ p {
 --------------------------------------------- */
 
 header {
-  background: #fff;
+  background: #f9f9f3;
   position: fixed;
   z-index: 3;
   width: 100%;
   left: 0;
   top: 0;
+  box-shadow: 2px 2px .5px #00000061;
 }
 
 .logo {
@@ -198,12 +200,7 @@ header {
   margin-bottom: 8px;
 }
 
-#home h2 {
-  font-size: 20px;
-  background-color: #ffffffa3;
-  box-shadow: 2px 2px .5px #00000061;
-  border-radius: 8px;
-}
+
 /* ------------------------------------------
   MASK
 --------------------------------------------- */
@@ -288,7 +285,7 @@ header {
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   /*border-top: 1px solid white;*/
   text-decoration: none;
-  background: #fff;
+  background: transparent;
   padding: 0.7em 1em;
   color: #17202A;
   width: 100%;
@@ -299,6 +296,8 @@ header {
 .nav-collapse a:active,
 .nav-collapse .active a {
   background: rgba(0, 0, 0, 0.12);
+  box-shadow: 2px 2px .5px .5px #00000061;
+  border-radius: 5px;
 }
 
 @media screen and (min-width: 70em) {
@@ -393,7 +392,7 @@ section#home {
     section#home {
         background-attachment: scroll;
         height: auto;
-            padding-top: 100px;
+            padding-top: 1px;
     }
 }
 
@@ -469,6 +468,7 @@ section#services{
   height: 80px;
   width: auto;
 }
+
 
 #services img {
   height:150px;
@@ -817,10 +817,6 @@ width: 100%;
     }
 }
 
-.home-web {
-  background-color: white;
-
-}
 
 .home-web img {
   height:150px;
@@ -954,7 +950,7 @@ font-weight: bolder;
   background-image: url(images/dronephoto1.5.jpg);
   min-height: fit-content;
   width: 100%;
-  height: 400px;
+  height: 500px;
   background-size: cover;
   background-attachment: fixed;
     background-position: center;
@@ -969,10 +965,6 @@ font-weight: bolder;
     }
 }
 
-.home-drone {
-  background-color: white;
-
-}
 
 .home-drone a:hover {
  filter: drop-shadow(2px 2px .5px #00000061);
@@ -998,4 +990,109 @@ font-weight: bolder;
     padding: 20px;
   }
 
+  #consult ul {
+    padding-bottom: 40px;
+  }
+
+#golfdrone-img {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(images/dronegolf1.jpg);
+  min-height: fit-content;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width: 1024px) {
+#golfdrone-img {
+        background-attachment: scroll;
+        height: auto;
+            padding-top: 200px;
+    }
+}
+
+
+#realestatedrone-img {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(images/realestatedroneimg1.jpg);
+  min-height: fit-content;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width: 1024px) {
+#realestatedrone-img {
+        background-attachment: scroll;
+        height: auto;
+            padding-top: 200px;
+    }
+}
+
+#farmdrone-img {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(images/farmdroneimg1.jpg);
+  min-height: fit-content;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width: 1024px) {
+#farmdrone-img {
+        background-attachment: scroll;
+        height: auto;
+            padding-top: 200px;
+    }
+}
+
+
+ #home-drone img {
+  height:160px;
+  width: auto;
+
+}
+
+@media screen and (min-width: 880px) {
+
+  #home-drone img {
+  height:120px;
+  width: auto;
+
+}
+
+  }
+
+  #hourdrone-img {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-image: url(images/dronephoto1.4.jpg);
+  min-height: fit-content;
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width: 1024px) {
+#hourdrone-img {
+        background-attachment: scroll;
+        height: auto;
+            padding-top: 200px;
+    }
+}
 
