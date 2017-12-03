@@ -1109,14 +1109,14 @@ font-weight: bolder;
 
 }
 
-#thankyou-pg {
-  padding-top: 200px;
+section#thankyou-pg {
+  padding-top: 100px;
 
 }
 
   @media screen and (min-width: 880px) {
 
-#thankyou-pg {
+section#thankyou-pg {
   padding-top: 100px;
 
 }
@@ -1154,6 +1154,7 @@ font-weight: bolder;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s;
+    margin-left: 20px;
 }
 
 /* The Close Button */
@@ -1241,5 +1242,164 @@ font-weight: bolder;
     from {opacity: 0} 
     to {opacity: 1}
 }
+/* web ad */
+body#web-ad-home {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-image: url(images/web-ad-home.jpg);
+  min-height: fit-content;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    body#web-ad-home {
+        background-attachment: scroll;
+        height: 100%;
+            padding-top: 1px;
+    }
+}
+
+html#web-ad-home {
+  background-image: url(images/web-ad-home.jpg);
+  min-height: fit-content;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 
+@media only screen and (max-device-width: 1024px) {
+    html#web-ad-home {
+        background-attachment: scroll;
+        height: 100%;
+            padding-top: 1px;
+    }
+}
+
+#web-ad-home h1 {
+  font-size: 60px;
+}
+
+@media only screen and (max-device-width: 1024px) { 
+#web-ad-home h1 {
+  font-size: 30px;
+}
+
+}
+
+
+#web-ad-home h5 {
+  color: #fff;
+  font-size: 20px;
+   text-shadow: 1px 1px #17202A;
+}
+
+@media only screen and (max-device-width: 1024px) { 
+
+#web-ad-home h5 {
+  color: #fff;
+  font-size: 15px;
+}
+}
+
+/* drone ad */
+
+body#drone-ad-home {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  background-image: url(images/drone-ad-img.jpg);
+  min-height: fit-content;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media only screen and (max-device-width: 1024px) {
+    body#drone-ad-home {
+        background-attachment: scroll;
+        height: 100%;
+            padding-top: 1px;
+    }
+}
+
+html#drone-ad-home {
+  background-image: url(images/drone-ad-img.jpg);
+  min-height: fit-content;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+@media only screen and (max-device-width: 1024px) {
+    html#drone-ad-home {
+        background-attachment: scroll;
+        height: 100%;
+            padding-top: 1px;
+    }
+}
+
+#drone-ad-home h1 {
+  font-size: 60px;
+}
+
+@media only screen and (max-device-width: 1024px) { 
+#drone-ad-home h1 {
+  font-size: 30px;
+}
+
+}
+
+
+#drone-ad-home h5 {
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 1.5px 1.5px #17202A;
+}
+
+@media only screen and (max-device-width: 1024px) { 
+
+#drone-ad-home h5 {
+  color: #fff;
+  font-size: 15px;
+}
+}
+
+/* buttons */
+
+.buttona {
+display: inline-block;
+    padding: .5em;
+    background-color: #fff;
+    text-decoration: none;
+    color: #17212b;
+    border: 4px solid;
+    border-color: #17212b;
+    width: 50%;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+
+}
+
+.buttona:hover {
+color: indianred;
+border-color: indianred;
+}

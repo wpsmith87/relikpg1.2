@@ -6,7 +6,6 @@ if(!isset($_POST['submit']))
 }
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
-$message = $_POST['message'];
 
 //Validate first
 if(empty($name)||empty($visitor_email)) 
@@ -23,8 +22,7 @@ if(IsInjected($visitor_email))
 
 $email_from = 'will@relikdesign.com';//<== update the email address
 $email_subject = "New Form submission";
-$email_body = "You have received a new Drone message from the user $name, their email is $visitor_email.\n".
-    "Here is the message:\n $message".
+$email_body = "You have received a new Drone Ad message from the user $name, their email is $visitor_email.\n".
     
 $to = "will@relikdesign.com";//<== update the email address
 $headers = "From: $email_from \r\n";
@@ -40,7 +38,7 @@ $headers2 .= "Reply-To: $email_from \r\n";
 mail($to,$email_subject,$email_body,$headers);
 mail($visitor_email,$email_subject2,$email_body2,$headers2);
 //done. redirect to thank-you page.
-header('Location: thank-you.html');
+header('Location: drone.html');
 
 
 // Function to validate against any email injection attempts
