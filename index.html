@@ -9,7 +9,7 @@
 
      <meta name="og:title" content="Web Development - Drone | Relik Design">
     <meta name="og:description" content="Responsive web development & drone photography. Located in the Omaha, NE metro area. Coding & flying anywhere, for every industry.">
-    <meta name="og:image" content="http://mywebsite.com/default-og-thumbnail.png">
+    <meta name="og:image" content="http://relikdesign.com/reliklogo2.5.png">
 
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
@@ -30,6 +30,8 @@
       <link rel="stylesheet" href="css/ie.css">
     <![endif]-->
     <script src="js/responsive-nav.js"></script>
+    <!-- a helper script for vaidating the contact-form-->
+<script language="JavaScript" src="js/gen_validatorv31.js" type="text/javascript"></script>
   </head>
   <body>
 
@@ -80,7 +82,7 @@
       <div class="col-4">
         <div class="box">
           <ul>
-          <li><a href="web.html" target="_blank"><img src="css/images/webdevicon1.png"></a></li>
+          <li><a href="#web" data-scroll><img src="css/images/webdevicon1.png"></a></li>
           <li>Web Development</li>
         </ul>
         </div>
@@ -88,7 +90,7 @@
       <div class="col-4">
         <div class="box">           
           <ul>
-          <li><a href="drone.html" target="_blank"><img src="css/images/photovidicon1.png"></a></li>
+          <li><a href="#drone" data-scroll><img src="css/images/photovidicon1.png"></a></li>
           <li>Drone Photo/Vid</li>
         </ul>
         </div>
@@ -167,7 +169,7 @@
         <div class="box">
           <p>Consulting services are billed hourly at $50 per hour with a minimum of 25 hours.</p>
           <br>
-          <h6>Listed below are a few Consulting Options we offer. Please contact us for more details.</h6>
+          <h6>Listed below are a few Consulting Options we offer. Please <a href="#contact" data-scroll>contact us</a> for more details.</h6>
          <ul>
            <li><h4>Simple Project: $1,200</h4></li>
            <li><h4>Complex Project: $3,000</h4></li>
@@ -335,21 +337,29 @@
           <h2>Contact Us</h2>
           <br>
             <p>Phone: 303-550-1544</p>
-            <p>Email: <a href="mailto:will@relikdesign.com?Subject=I%20have%20a%20question" target="_top">will@relikdesign.com</a></p>
-            <br>
-            <form action="https://formspree.io/will@relikdesign.com" method="POST">
+            <p>Email: <a href="mailto:will@relikdesign.com?Subject=I%20have%20a%20question..." target="_top">will@relikdesign.com</a></p>
+            <form name="myemailform" action="form-to-email.php" method="POST">
               <ul>
-              <li><input class="cont" type="email" name="_replyto" placeholder="Your email"></li>
+              <li><input class="cont" type="text" name="name" placeholder="Your name"></li>  
+              <li><input class="cont" type="text" name="email" placeholder="Your email"></li>
                <li><textarea class="conti" name="message" placeholder="Your message"></textarea></li>
-               <button class="cont-button" type="submit">Send</button>
+               <button class="cont-button" type="submit" name="submit">Send</button>
               </ul>
              </form>
-
+             <script language="JavaScript">
+// Code for validating the form
+var frmvalidator  = new Validator("myemailform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
         </div>
       </div>
       <div class="col-6">
         <div class="box">
           <h2>Visit Us</h2>
+          <br>
+          <br>
           <br>
           <h3>Carter Lake, IA 51510</h3>
           <br>
@@ -371,6 +381,39 @@
     </section>
 
 </main>
+
+<!-- The Modal Popup -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      Get a Free Web or Drone Consultation
+    </div>
+    <div class="modal-body">
+       <form name="myemailform" action="form-to-email.php" method="POST">
+              <ul>
+              <li><input class="cont" type="text" name="name" placeholder="Your name"></li>  
+              <li><input class="cont" type="text" name="email" placeholder="Your email"></li>
+               <li><textarea class="conti" name="message" placeholder="Your message"></textarea></li>
+               <button class="cont-button" type="submit" name="submit">Send</button>
+              </ul>
+             </form>
+             <script language="JavaScript">
+// Code for validating the form
+var frmvalidator  = new Validator("myemailform");
+frmvalidator.addValidation("name","req","Please provide your name"); 
+frmvalidator.addValidation("email","req","Please provide your email"); 
+frmvalidator.addValidation("email","email","Please enter a valid email address"); 
+</script>
+    </div>
+    <div class="modal-footer">
+    <span class="close">&times;</span> 
+    </div>
+  </div>
+
+</div>
+<!-- The Modal Popup end -->
 
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script src="js/main.js"></script>
