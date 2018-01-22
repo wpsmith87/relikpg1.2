@@ -6,7 +6,7 @@ if(!isset($_POST['submit']))
 }
 $name = $_POST['name'];
 $visitor_email = $_POST['email'];
-$message = $_POST['message'];
+//$message = $_POST['message'];
 
 //Validate first
 if(empty($name)||empty($visitor_email)) 
@@ -23,8 +23,8 @@ if(IsInjected($visitor_email))
 
 $email_from = 'will@relikdesign.com';//<== update the email address
 $email_subject = "New Form submission";
-$email_body = "You have received a new Web message from the user $name, $visitor_email.\n".
-    "Here is the message:\n $message".
+$email_body = "You have received a new Web message from the user $name, their email is $visitor_email.\n".
+  //  "Here is the message:\n $message".
     
 $to = "will@relikdesign.com";//<== update the email address
 $headers = "From: $email_from \r\n";

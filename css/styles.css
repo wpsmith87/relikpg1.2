@@ -77,7 +77,7 @@ a:hover {
   user-select: none;
 }
 
-@media screen and (min-width: 80em) {
+@media screen and (min-width: 72em) {
   .js .nav-collapse {
     position: relative;
   }
@@ -124,6 +124,32 @@ body {
 
   }
 
+  #home h2 {
+    font-size: 22px;
+    color: #fff;
+    text-shadow: 2px 2px #17202A;
+    margin-top: 50px;
+  }
+
+  #home ul {
+    margin-top: 20px;
+    display: inline-block;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.servs {
+  margin-top: 55px;
+}
+
+  #home h3 {
+    color: #fff;
+    text-shadow: 2px 2px #17202A;
+    font-size: 32px;
+  font-weight: lighter;
+  margin-top: 20px;
+  }
+
 h2 {
  font-size: 40px;
 }
@@ -142,6 +168,40 @@ section {
   padding-bottom: 40px;
 }
 
+nav a {
+  color: #17202A;
+  text-decoration: none;
+  
+}
+
+nav a:hover {
+  text-shadow: 1px 1px #28b463;
+}
+
+
+#web a {
+color: #17202A;
+  text-decoration: none;
+  text-shadow: 1px 1px #28b463;
+}
+
+#web a:hover {
+  color: #17202A;
+  text-decoration: underline;
+  text-shadow: none;
+}
+
+#drone a {
+color: #17202A;
+  text-decoration: none;
+  text-shadow: 1px 1px #28b463;
+}
+
+#drone a:hover {
+  color: #17202A;
+  text-decoration: underline;
+  text-shadow: none;
+}
 
 p {
   width: 90%;
@@ -230,7 +290,7 @@ header {
   opacity: 1;
 }
 
-@media screen and (min-width: 80em) {
+@media screen and (min-width: 72em) {
   .mask {
     display: none !important;
     opacity: 0 !important;
@@ -263,7 +323,7 @@ header {
   float: left;
 }
 
-@media screen and (min-width: 80em) {
+@media screen and (min-width: 72em) {
   .nav-collapse {
     float: right;
     width: auto;
@@ -275,7 +335,7 @@ header {
   width: 100%;
 }
 
-@media screen and (min-width: 80em) {
+@media screen and (min-width: 72em) {
   .nav-collapse li {
     width: auto;
   }
@@ -293,14 +353,17 @@ header {
   font-size: 14px;
 }
 
-.nav-collapse a:active,
-.nav-collapse .active a {
-  background: rgba(0, 0, 0, 0.12);
-  box-shadow: 2px 2px .5px .5px #00000061;
-  border-radius: 5px;
+.nav-collapse a:hover {
+  color: indianred;
+  text-shadow: none;
 }
 
-@media screen and (min-width: 80em) {
+.nav-collapse a:active,
+.nav-collapse .active a {
+  color: #28b463;
+}
+
+@media screen and (min-width: 72em) {
   .nav-collapse a {
     /*border-left: 1px solid white;*/
     padding: 1.8em 2em;
@@ -316,7 +379,7 @@ header {
   padding-left: 2em;
 }
 
-@media screen and (min-width: 80em) {
+@media screen and (min-width: 72em) {
   .nav-collapse ul ul a {
     display: none;
   }
@@ -380,9 +443,8 @@ section#home {
   padding-top: 100px;
   padding-bottom: 80px;
   background-image: url(images/dronephoto1.6.jpg);
-  min-height: fit-content;
   width: 100%;
-  height: 300px;
+  height: fit-content;
   background-size: cover;
   background-attachment: fixed;
     background-position: center;
@@ -443,7 +505,7 @@ ul {
 .row h1 {
   margin-top: 50px;
   margin-bottom: 20px;
-  font-size: 28px;
+  font-size: 46px;
   text-shadow: 2px 2px #17202A;
   color: #fff;
 }
@@ -452,12 +514,31 @@ ul {
 
   .row h1 {
   margin-bottom: 20px;
-  font-size: 44px;
+  font-size: 64px;
 
 }
 
 }
 
+#thankyou-pg ul {
+    margin-top: 40px;
+    display: inline-block;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 10px;
+}
+
+@media screen and (min-width: 880px) {
+
+#thankyou-pg ul {
+    margin-top: 40px;
+    display: inline-block;
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 20px;
+}
+
+}
 
 /* Services */
 
@@ -515,7 +596,7 @@ section#about {
 section#about-img {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: url(images/about-image1.png);
+  background-image: url(images/about-image1.jpg);
   min-height: 400px;
   width: 100%;
   height: 400px;
@@ -958,7 +1039,7 @@ font-weight: bolder;
   padding-top: 100px;
   padding-bottom: 80px;
   background-image: url(images/dronephoto1.5.jpg);
-  min-height: fit-content;
+  min-height: 400px;
   width: 100%;
   height: 500px;
   background-size: cover;
@@ -971,6 +1052,7 @@ font-weight: bolder;
 #home.drone-home {
         background-attachment: scroll;
         height: auto;
+        min-height: 400px;
             padding-top: 200px;
     }
 }
@@ -1134,8 +1216,8 @@ section#thankyou-pg {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: transparent; /* Fallback color */
+    background-color: transparent; /* Black w/ opacity */
     -webkit-animation-name: fadeIn; /* Fade in the background */
     -webkit-animation-duration: 0.4s;
     animation-name: fadeIn;
@@ -1146,15 +1228,16 @@ section#thankyou-pg {
 .modal-content {
     top: 0;
     background: -webkit-linear-gradient(#17212b, #28b463);
-    background: -o-linear-gradient(indianred, #8bc1a2);
-    background: -moz-linear-gradient(indianred, #8bc1a2);
-    width: fit-content;
+    background: -o-linear-gradient(#17212b, #28b463);
+    background: -moz-linear-gradient(#17212b, #28b463);
+    width: 270px;
     border-radius: 10px;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
     animation-name: slideIn;
     animation-duration: 0.4s;
     margin-left: 20px;
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.35);
 }
 
 /* The Close Button */
@@ -1201,11 +1284,8 @@ section#thankyou-pg {
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.modal-body img {
-  height: 60%;
-  width: 60%;
-  display: block;
-  margin: 0 auto;
+.modal-body ul {
+margin-top: 10px;
 }
 
 

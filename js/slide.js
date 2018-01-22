@@ -32,7 +32,7 @@ window.onclick = function(event) {
 }
 
 function myFunction() {
-    myVar = setTimeout(showModal, 5000);
+    myVar = setTimeout(showModal, 15000);
 }
 
 $(document).ready(function() {
