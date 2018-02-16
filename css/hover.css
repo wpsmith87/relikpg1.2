@@ -2199,8 +2199,8 @@
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: indianred;
-  border-color: indianred;
+  background: #28B463;
+  border-color: #28B463;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
@@ -2221,7 +2221,7 @@
   left: 50%;
   right: 50%;
   bottom: 0;
-  background: indianred;
+  background: #28B463;
   height: 4px;
   -webkit-transition-property: left, right;
   transition-property: left, right;
