@@ -273,6 +273,11 @@ a:hover {
 
 /* Custom Styles */
 
+
+.cont-form {
+  float: left;
+}
+
 /* home - top */
 
 section#home {
@@ -421,7 +426,7 @@ min-height: 400px;
 section#advisor-img {
   padding-top: 80px;
   padding-bottom: 80px;
-  background-image: url(http://www.panicstudio.tv/assets-user/projects/69/322/Junkyard_Website.gif);
+  background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/be832922391491.58c25558f0fe7.gif);
   min-height: 400px;
   width: 100%;
   height: fit-content;
@@ -447,7 +452,6 @@ background-image: url(https://s-media-cache-ak0.pinimg.com/originals/4b/04/f1/4b
 }
 
 .cont-img {
-  background-image: url(http://hddfhm.com/images/animated-bar-line-icon-clipart-email-gif-3.gif);
   min-height: 400px;
   width: 100%;
   height: fit-content;
@@ -526,6 +530,11 @@ section#about-img {
 
     section#contact-img {
         background-attachment: scroll;
+        height: auto;
+    }
+
+    .cont-img {
+      background-attachment: scroll;
         height: auto;
     }
 
@@ -829,7 +838,7 @@ border-color: #28B463;
 
 .cont {
 height: 30px;
-width: 98%;
+width: 80%;
 margin-bottom: 10px;
 font-size: 18px;
 border: 1px solid #17202A;
@@ -839,7 +848,7 @@ padding: 5px;
 
 @media screen and (min-width: 880px) {
   .cont {
-width: 100%;
+width: 80%;
 }
 }
 
@@ -849,7 +858,7 @@ width: 100%;
 
 .conti {
 height: 60px;
-width: 98%;
+width: 80%;
 font-size: 18px;
 border-color: #17202A;
 border-radius: 8px;
@@ -858,7 +867,7 @@ padding: 5px;
 
 @media screen and (min-width: 880px) {
   .conti {
-width: 100%;
+width: 80%;
 }
 }
 
@@ -867,7 +876,7 @@ box-shadow: 2px 2px .5px #ccc;
 }
 
 .cont-button {
- width: 100%;
+ width: 75%;
  height: auto;
  font-size: 22px;
  color: #fff;
@@ -879,7 +888,7 @@ box-shadow: 2px 2px .5px #ccc;
 
 @media screen and (min-width: 880px) {
   .cont-button {
-width: 100%;
+width: 75%;
 }
 }
 
