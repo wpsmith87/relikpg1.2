@@ -130,7 +130,7 @@ input {
 
  img {
   margin-top: 20px;
-  height: 250px;
+  height: 220px;
   width: auto;
   filter: drop-shadow(2px 2px .5px #999);
 }
@@ -148,7 +148,6 @@ h1 {
     text-shadow: 2px 2px #999;
     color: #f9f9f3;
     text-align: left;
-    margin-left: 20px;
 }
 
 
@@ -243,7 +242,7 @@ p {
 }
 
 
-li {
+section li {
   text-decoration: none;
   list-style: none;
   padding-top: 8px;
@@ -447,6 +446,17 @@ background-image: url(https://s-media-cache-ak0.pinimg.com/originals/4b/04/f1/4b
     background-repeat: no-repeat;
 }
 
+.cont-img {
+  background-image: url(http://hddfhm.com/images/animated-bar-line-icon-clipart-email-gif-3.gif);
+  min-height: 400px;
+  width: 100%;
+  height: fit-content;
+  background-size: cover;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 
 
 
@@ -498,7 +508,7 @@ font-size: 40px;
 @media only screen and (max-device-width: 1024px) { 
 
 
-
+/*
 section#about-img {
         background-attachment: scroll;
         height: auto;
@@ -518,7 +528,7 @@ section#about-img {
         background-attachment: scroll;
         height: auto;
     }
-
+*/
 }
 
  /*/////////////////////*/ 
@@ -672,7 +682,7 @@ display: inline;
   color: #17202A;
   width: 100%;
   float: left;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 .nav-collapse a:hover {
